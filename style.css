@@ -1,67 +1,16 @@
-body {
-    font-size: 100px;
-    color: purple;
-    background-color: yellow;
+html{
+   font-size: 16px; /* 16px = 1rem */
 }
 
-h1 {
-    padding: 10px;
-    font-size: 50px;
+body{
+    padding: 1rem;
 }
 
-h2 {
-    font-size: 50px;
+ul{
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
 }
-
-h3 {
-    font-size: 50px;
-
+li{
+    font-size: 1.5rem;
 }
-
-p {
-    font-size: 50px;
-}
-
-#about-me {
-    width: 80%;
-    margin: 10px 20px 30px 40px;
-}
-
-#contatti {
-    background-color: hsla(0, 4%, 0, 2);
-}
-
-.section {
-    padding: 16px;
-}
-.gallery{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-/* X-Small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
-
-// Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {}
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {}
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { 
-    .gallery{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .gallery figure{
-        width: 30%;
-    }
- }
-
-/*X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {}
-
-/* XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {}
