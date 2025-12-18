@@ -1,5 +1,8 @@
 html{
    font-size: 16px; /* 16px = 1rem */
+   background-color:hsl(0, 0%, 0%);
+   color: rgb(255, 255, 255);
+   
 }
 
 body{
@@ -7,10 +10,36 @@ body{
 }
 
 ul{
-    margin: 0 auto;
+    margin: 0 ;
     padding: 0;
-    list-style-type: none;
+    list-style-type: "🍓";
 }
 li{
     font-size: 1.5rem;
+}
+
+/* link a riposo*/
+
+a, a:link {
+    color:rgb(0, 0, 255);
+    text-decoration: none;
+
+
+}
+
+/* link gia vistati*/
+a:visited {
+    color:rgb(0, 255, 255);
+}
+
+/* link a */
+a:hover, a:focus{
+    color:rgb(127, 255, 0);
+
+}
+
+
+/* link a */
+a:active{
+    color: rgb(210, 105, 30);
 }
