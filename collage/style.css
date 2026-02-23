@@ -1,10 +1,13 @@
 html {
-   font-size: 16px;
-   /* 16px = 1rem */
+   font-size: 16px; /* 16px = 1rem */
    font-family: 'Inter', sans-serif;
 
 }
 
+
+h1{
+   font-weight: 200;
+}
 #pagina {
    width: 100vw;
    height: 100dvh;
@@ -13,226 +16,287 @@ html {
 
 .foto {
    position: fixed;
-   width: 250px;
-   height: 325px;
+   width: 300px;
+   height: auto;
    top: 170px;
-   left: 60px;
+   left: 102px;
+   z-index: 100;
 }
 
-.scotch-nero {
+.logo-pimpa {
    position: fixed;
-   width: 170px;
-   height: 92px;
-   right: 240px;
-   top: 100px;
-   transform: rotate(-60deg);
+   width: 200px;
+   height: auto;
+    top: 454px;
+   left: 77px;
+  
 
 }
 
-.scotch-bianco {
+.rosita{
    position: fixed;
-   width: 130px;
-   height: 110px;
-   bottom: 125px;
-   right: 2px;
-   transform: rotate(115deg);
-}
-
-.testo {
-   font-size: 28px;
-   position: fixed;
-   top: 71%;
-   left: 20px;
-   line-height: 50px
+   width: 189px;
+   height: auto;
+   bottom: 179px;
+   right: 178px;
+z-index: 90;
 }
 
 
-.cerchiomedio{
+
+
+.cerchiomedio {
    width: 50px;
    height: 50px;
    border-radius: 50%;
-   background-color: black;
+   background-color: rgb(255, 0, 0);
 }
 
-.pos-a1{
+.pos-a1 {
    position: fixed;
    left: 25px;
    top: 10px;
 }
 
-.pos-a2{
+.pos-a2 {
    position: fixed;
    left: 275px;
-   top:-15px ;
+   top: -15px;
 }
 
-.pos-a3{
+.pos-a3 {
    position: fixed;
    left: 290px;
-   top: 145px ;
+   top: 145px;
 }
 
-.pos-a4{
+.pos-a4 {
    position: fixed;
-   left: 35px;
-   top: 355px ;
+   left: 300px;
+   top: 355px;
 }
 
-.pos-a5{
+.pos-a5 {
    position: fixed;
    left: 250px;
-   top: 590px ;
+   top: 590px;
 }
 
-.pos-a6{
+.pos-a6 {
    position: fixed;
    left: -24px;
    top: 590px;
 }
 
+.pos-b1{
+   position: fixed;
+   left: 99px;
+   top: 572px;
+}
 
-.cerchiogrande{
+.pos-b2{
+   position: fixed;
+   left: 60px;
+   top: 127px;
+}
+.cerchiogrande {
    width: 70px;
    height: 70px;
    border-radius: 50%;
-   background-color: black;
-   
+   background-color: rgb(255, 0, 0);
+
 }
 
-.pos-f1{
+.pos-f1 {
    position: fixed;
    left: 190px;
-   top: 50px ;
+   top: 50px;
 }
 
-.pos-f2{
+.pos-f2 {
    display: none;
 }
 
-.cerchiopiccolo{
+.cerchiopiccolo {
    width: 70px;
    height: 70px;
    border-radius: 50%;
-   background-color: black;
-   display: none;
+   background-color: rgb(255, 0, 0);
+   animation-name: big;
+   animation-duration: 1.5s;
+   animation-timing-function: ease-out;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+   animation-fill-mode: none;
+   animation-play-state: running;
 }
+
+@keyframes big {
+   0% {
+      transform: scale(.3);
+      background-color: rgb(255, 247, 0);
+      border-radius: 100%;
+   }
+
+   50% {
+      background-color: rgb(236, 211, 227);
+   }
+
+   100% {
+      transform: scale(1.5);
+      background-color: rgb(57, 203, 198);
+   }
+
+
+}
+
+#pagina:hover {
+   background-color: rgb(182, 213, 194);
+   cursor: default;
+   -webkit-transition: background-color 1s ease-out;
+   -moz-transition: background-color 1s ease-out;
+   -o-transition: background-color 1s ease-out;
+   transition: background-color 1s ease-out;
+}
+
+.cerchiogrande:hover {
+   background-color: rgb(136, 12, 230);
+   cursor: pointer;
+   -webkit-transition: background-color 1s ease-out;
+   -moz-transition: background-color 1s ease-out;
+   -o-transition: background-color 1s ease-out;
+   transition: background-color 1s ease-out;
+}
+
+.cerchiomedio:hover {
+   background-color: rgb(12, 230, 12);
+   cursor: pointer;
+   -webkit-transition: background-color 1s ease-out;
+   -moz-transition: background-color 1s ease-out;
+   -o-transition: background-color 1s ease-out;
+   transition: background-color 1s ease-out;
+}
+
 /* X-Small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default in Bootstrap */
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {}
+
 /*// Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {}
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 1024px){
-   
-    html {
-        font-size: 24px;
-    }
+@media (min-width: 1024px) {
 
-    .foto {
-   position: fixed;
-   width: 425px;
-   height: 160px;
-   top: 90px;
-   left: 500px;
-}
-   .scotch-nero {
-   position: fixed;
-   width: 247px;
-   height: 90px;
-   left: 340px;
-   top: 5px;
- 
+   html {
+      font-size: 24px;
+   }
+
+   .foto {
+      position: fixed;
+      width: 449px;
+      height: auto;
+      top: 60px;
+      left: 657px;
+   }
+
+   .logo-pimpa {
+      position: fixed;
+      width: 288px;
+      height: auto;
+      left: 568px;
+      top: 486px;
+
+   }
+
+   .rosita {
+      position: fixed;
+      width: 301px;
+      height: 512px;
+      bottom: 130px;
+      right: 727px;
+
+   }
+
+
+
+   .cerchiomedio {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background-color: rgb(255, 0, 0);
+   }
+
+   .pos-a1 {
+      position: fixed;
+      left: 390px;
+      top: 350px;
+   }
+
+   .pos-a2 {
+      position: fixed;
+      left: 960px;
+      top: 599px;
+   }
+
+   .pos-a3 {
+      position: fixed;
+      left: 1283px;
+      top: 538px;
+   }
+
+   .pos-a4,
+   .pos-a5,
+   .pos-a6 {
+      display: none;
+   }
+
+   .cerchiogrande {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background-color: rgb(255, 0, 0);
+
+   }
+
+   .pos-f1 {
+      position: fixed;
+      left: 80px;
+      top: 50px;
+   }
+
+   .pos-f2 {
+      display: block;
+      position: fixed;
+      left: 1326px;
+      bottom: 641px;
+   }
+
+   .cerchiopiccolo {
+      display: block;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: rgb(255, 0, 0);
+
+   }
+
+   .pos-b1 {
+      position: fixed;
+      left: 1050px;
+      top:  250px;
+   }
+
+   .pos-b2 {
+      position: fixed;
+      left: 100px;
+      top: 600px;
+   }
 }
 
-.scotch-bianco {
-   position: fixed;
-   width: 180px;
-   height: 110px;
-   bottom: 45px;
-   right: 497px;
-  
-}
-
-.testo {
-   font-size: 42px;
-   position: fixed;
-   top: 68%;
-   left: 286px;
-   line-height: 79px
-}
-
-.cerchiomedio{
-   width: 90px;
-   height: 90px;
-   border-radius: 50%;
-   background-color: black;
-}
-
-.pos-a1{
- position: fixed;
-   left: 390px;
-   top: 350px ;  
-}
-.pos-a2{
- position: fixed;
-   left: 873px;
-   top: 56px ;  
-}
-.pos-a3{
- position: fixed;
-   left: 1283px;
-   top: 538px ;  
-}
-.pos-a4, .pos-a5, .pos-a6{
-   display: none;
-}
-.cerchiogrande{
-   width: 140px;
-   height: 140px;
-   border-radius: 50%;
-   background-color: black;
-   
-}
-
-.pos-f1{
-   position: fixed;
-   left: 80px;
-   top: 50px ;
-}
-.pos-f2{
-   display: block;
- position: fixed;
-   left: 1326px;
-   bottom: 641px ;  
-}
-
-.cerchiopiccolo{
-   display: block;
-   width: 70px;
-   height: 70px;
-   border-radius: 50%;
-   background-color: black;
-   
-}
-
-.pos-b1{
-   position: fixed;
-   left: 1098px;
-   bottom: 347px ;
-}
-
-.pos-b2{
-   position: fixed;
-   left: 43px;
-   bottom: 11px;
-}
-    
-   
 /*// X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) {}
 
 /*/ XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {}

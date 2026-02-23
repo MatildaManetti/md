@@ -1,45 +1,120 @@
-html{
-   font-size: 16px; /* 16px = 1rem */
-   background-color:hsl(0, 0%, 0%);
-   color: rgb(255, 255, 255);
-   
+html {
+    font-size: 16px;
+    /* 16px = 1rem */
+    background-color: hsl(0, 0%, 0%);
+    color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+
 }
 
-body{
-    padding: 1rem;
+body {
+    padding: 2rem;
 }
 
-ul{
-    margin: 0 ;
-    padding: 0;
-    list-style-type: "🍓";
-}
-li{
-    font-size: 1.5rem;
+.titoli {
+    margin-bottom: 2rem;
 }
 
-/* link a riposo*/
+h1 {
+    font-size: 3rem;
+    line-height: 0.9;
+}
 
-a, a:link {
-    color:rgb(0, 0, 255);
+h2 {
+    line-height: 2;
+    font-weight: 100;
+}
+
+.contenitore {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+}
+
+#sezioni {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+.oggetto {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
     text-decoration: none;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
 
+.oggetto img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 30px;
+    display: block;
+    object-position: top;
+    background-color: white;
 
 }
 
-/* link gia vistati*/
-a:visited {
-    color:rgb(0, 255, 255);
+.oggetto:active img {
+    filter: grayscale(100%)contrast(130%);
+    transform: scale(1.1);
 }
 
-/* link a */
-a:hover, a:focus{
-    color:rgb(127, 255, 0);
+.oggetto:hover img {
+    filter: grayscale(100%) contrast(130%);
 
 }
 
 
-/* link a */
-a:active{
-    color: rgb(210, 105, 30);
+
+.oggetto figcaption {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
 }
+
+/* X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    #sezioni {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .oggetto {
+        flex: 1;
+        max-width: 400px;
+        margin-bottom: 0;
+    }
+
+
+    .titoli {
+        text-align: center;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+    }
+}
+
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {}
