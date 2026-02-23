@@ -1,9 +1,7 @@
 html {
    font-size: 16px; /* 16px = 1rem */
    font-family: 'Inter', sans-serif;
-
 }
-
 
 h1{
    font-weight: 200;
@@ -147,15 +145,11 @@ z-index: 90;
       background-color: rgb(57, 203, 198);
    }
 
-
 }
 
 #pagina:hover {
    background-color: rgb(182, 213, 194);
    cursor: default;
-   -webkit-transition: background-color 1s ease-out;
-   -moz-transition: background-color 1s ease-out;
-   -o-transition: background-color 1s ease-out;
    transition: background-color 1s ease-out;
 }
 
